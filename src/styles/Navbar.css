@@ -1,0 +1,72 @@
+.main-nav {
+    background-color: pink;
+    height: 6.4rem;
+    display: grid;
+    grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+}
+
+.logo {
+    /*background-color: blueviolet;*/
+    display: grid;
+    grid-column: 2/3;
+    justify-content:start;
+    align-items: center;
+}
+
+.logo h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+
+.menu-link {
+    grid-column: 3/4;
+}
+
+.menu-link ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6.5rem;
+}
+
+
+.menu-link ul li {
+    font-size: 1.5rem;
+}
+
+.menu-link ul li a {
+    text-transform: capitalize;
+    color: grey;
+    transition: 0.5s;
+}
+
+
+.menu-link ul li :hover > a {
+    transform-origin: left;
+    color: black;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+
+.icons {
+    grid-column: 4/5;
+}
+
+.icons ul {
+    height: 6.5rem;
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr);
+    justify-content: flex-end;
+    align-items: center;
+}
+.icons ul li {
+    text-align: right;
+}
+.icons ul li:first-child {
+    grid-column: 2/3;
+}
+
+
